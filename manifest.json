@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "Trove MCP",
+    "version": "1.0.0",
+    "description": "Save links to your Trove MCP server with custom tags and keyboard shortcuts",
+    
+    "permissions": [
+      "activeTab",
+      "storage",
+      "notifications",
+      "https://f753516b850a142422840bc1.fp.dev/*"
+    ],
+    
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Save to Trove",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+      }
+    },
+    
+    "commands": {
+      "save-link": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S",
+          "mac": "Command+Shift+S"
+        },
+        "description": "Save current page to Trove"
+      }
+    },
+    
+    "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  }
